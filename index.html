@@ -20,55 +20,97 @@
     <title>CodeWorks Cookhouse</title>
   </head>
   <body>
-    <section class="container-fluid pt-5">
-      <div class="row">
-        <!-- SECTION MENU -->
-        <section class="col-12 col-md-10 text-center">
-          <!-- SECTION MENU - HEADER -->
-          <div class="row text-center">
-            <div class="col-12">
-              <h1>CodeWorks Cookhouse</h1>
+    <main>
+      <section class="container-fluid pt-5">
+        <div class="row justify-content-center">
+          <!-- SECTION FILTER FOR MENU -->
+          <section class="col-3 col-lg-2 filter-menu">
+            <div class="row justify-content-center p-3">
+              <div id="filterTitle" class="col-12 text-center"></div>
+              <div class="col-12"><hr /></div>
+              <button
+                onclick="drawMenu('appetizers')"
+                type="button"
+                class="col-12 btn btn-outline-light p-3 my-3"
+              >
+                Appetizers
+              </button>
+              <button
+                onclick="drawMenu('sides')"
+                type="button"
+                class="col-12 btn btn-outline-light p-3 my-3"
+              >
+                Sides
+              </button>
+              <button
+                onclick="drawMenu('beverages')"
+                type="button"
+                class="col-12 btn btn-outline-light p-3 my-3"
+              >
+                Beverages
+              </button>
+              <button
+                onclick="drawMenu('main courses')"
+                type="button"
+                class="col-12 btn btn-outline-light p-3 my-3"
+              >
+                Main Courses
+              </button>
+              <button
+                onclick="drawMenu('desserts')"
+                type="button"
+                class="col-12 btn btn-outline-light p-3 my-3"
+              >
+                Desserts
+              </button>
+              <button
+                onclick="drawMenu('all')"
+                type="button"
+                class="col-12 btn btn-outline-light p-3 my-3"
+              >
+                All
+              </button>
+              <button
+                onclick="drawMenu('favorites')"
+                type="button"
+                class="col-12 btn btn-outline-light p-3 my-3"
+              >
+                Featured Favorites
+              </button>
             </div>
-          </div>
-          <!-- SECTION MENU - ITEMS -->
-          <div class="row text-center text-decoration-underline">
-            <h2>Appetizers</h2>
-          </div>
-          <div id="appetizers" class="row justify-content-center"></div>
-          <div class="row text-center text-decoration-underline">
-            <h2>Main Courses</h2>
-          </div>
-          <div id="mainCourses" class="row"></div>
-          <div class="row text-center text-decoration-underline">
-            <h2>Side Dishes</h2>
-          </div>
-          <div id="sideDishes" class="row"></div>
-          <div class="row text-center text-decoration-underline">
-            <h2>Desserts</h2>
-          </div>
-          <div id="desserts" class="row"></div>
-          <div class="row text-center text-decoration-underline">
-            <h2>Beverages</h2>
-          </div>
-          <div id="beverages" class="row"></div>
-        </section>
-        <!-- SECTION CHECKOUT -->
-        <section class="col-2">
-          <div class="row">
-            <div class="col-12">
-              <p>Your Order</p>
+          </section>
+          <!-- SECTION MENU -->
+          <section class="col-6 col-md-7 text-center">
+            <!-- SECTION MENU - HEADER -->
+            <div class="row text-center">
+              <div class="col-12">
+                <h1>CodeWorks Cookhouse</h1>
+              </div>
             </div>
-            <hr />
-            <div id="cart" class="col-12"></div>
-            <div
-              id="cartTotal"
-              class="col-12 my-4 d-flex justify-content-between"
-            ></div>
-            <div id="cartSubmit" class="col-12"></div>
-          </div>
-        </section>
-      </div>
-    </section>
+            <!-- SECTION MENU - ITEMS -->
+            <section
+              id="menu"
+              class="row justify-content-center menu-items-section"
+            ></section>
+          </section>
+          <!-- SECTION CHECKOUT -->
+          <section class="col-2">
+            <div class="row">
+              <div class="col-12">
+                <p>Your Order</p>
+              </div>
+              <hr />
+              <div id="cart" class="col-12"></div>
+              <div
+                id="cartTotal"
+                class="col-12 my-4 d-flex justify-content-between"
+              ></div>
+              <div id="cartSubmit" class="col-12"></div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
     <script src="main.js"></script>
   </body>
 </html>

@@ -1,0 +1,57 @@
+/* SECTION CORE */
+
+body {
+  background-image: url("https://images.unsplash.com/photo-1570560258879-af7f8e1447ac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZmFuY3klMjByZXN0YXVyYW50fGVufDB8fDB8fHww&w=1000&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+main {
+  background: rgba(40, 40, 40, 0.5);
+  -webkit-backdrop-filter: blur(9px);
+  backdrop-filter: blur(9px);
+  height: 100dvh;
+  color: white;
+}
+
+/* SECTION FILTER MENU */
+
+.filter-menu {
+  height: 100%;
+}
+
+.height-100 {
+  height: 100dvh;
+}
+
+/* SECTION MENU ITEMS */
+
+.menu-item {
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid white;
+}
+
+.menu-item:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 10px white;
+}
+
+.menu-item-image {
+  height: 10rem;
+  width: 90%;
+}
+
+.menu-items-section {
+  overflow-y: auto;
+  max-height: 88dvh;
+}
+
+.menu-items-section::-webkit-scrollbar {
+  display: none;
+}
+
+/* SECTION FONTS */
+
+.font-small {
+  font-size: 0.85rem;
+}
